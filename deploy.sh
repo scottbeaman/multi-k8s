@@ -1,6 +1,6 @@
-docker build -t scottbeaman/multi-client:latest -t  scottbeaman/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t scottbeaman/multi-server:latest -t scottbeaman/multi-server:$SHA - f ./server/Dockerfile ./server
-docker build -t scottbeaman/multi-worker:latest -t scottbeaman/multi-worker:$SHA - f ./worker/Dockerfile ./worker
+docker build -t scottbeaman/multi-client:latest -t scottbeaman/multi-client:$SHA -f ./client/Dockerfile ./client 
+docker build -t scottbeaman/multi-server:latest -t scottbeaman/multi-server:$SHA -f ./server/Dockerfile ./server 
+docker build -t scottbeaman/multi-worker:latest -t scottbeaman/multi-worker:$SHA -f ./worker/Dockerfile ./worker 
 docker push scottbeaman/multi-client:latest
 docker push scottbeaman/multi-server:latest
 docker push scottbeaman/multi-worker:latest
