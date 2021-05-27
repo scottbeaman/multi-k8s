@@ -9,7 +9,7 @@ spec:
       component: postgres
   template:
     metadata:
-      labels: 
+      labels:
         component: postgres
     spec:
       volumes:

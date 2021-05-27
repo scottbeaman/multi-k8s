@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: redis-depoyment
+  name: redis-deployment
 spec:
   replicas: 1
   selector:
@@ -16,5 +16,4 @@ spec:
         - name: redis
           image: redis
           ports:
-            - containerPort: 6379    
-    
+            - containerPort: 6379
